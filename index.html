@@ -7,7 +7,50 @@
   <title>OV즐거운HTML방</title>
 </head>
 <body>
-  <!--html에서 사용하는 주석임-->
-  Hello World!   
+  <div>
+    <h1>기본기</h1>
+    <br>
+  <!--html에서 사용하는 주석임
+      head는 웹 상단부 body는 우리가 흔히 보는 페이지-->
+  html에서는
+   그냥 치는
+   모든 글은 표시됩니다.
+   또한 줄 바꿈은
+
+
+   해당 기능 태그를 사용하지 않으면 무시됩니다.
+  <br>
+  1줄 띄어쓰기는 br 태그인데요. 요즘은 잘 사용하지 않습니다. (하지만 전 쓸겁니다)
+  <br>
+  <b>굵게 b 태그는 단순히 굵게 하는 것으로 용도에 맞는 다른 굵게 태그를 쓰는게 좋습니다</b>
+  <br>
+  <h2>제목 h 태그는 1~6까지 있으며 숫자가 작을수록 큽니다.</h2>
+  <br>
+  <strong>중요표시 strong 태그입니다.</strong>
+  <br>
+  <em>강조 em 태그입니다만 기울이기입니다.</em>
+  <br>
+  <u>언더바 u 태그입니다.</u>
+  <br>
+  <li>라인(리스트) li 태그는 1줄을 통째로 씁니다.(기본적으로 1줄을 가지는 태그들도 있습니다)</li>
+  <ul><h3><li>unordered_list인 ul 태그는 기호로 리스트를 만듭니다.</li></h3>
+  <li>태그의 여러개 사용은 당연히 가능합니다</li></ul>
+  <ol><h3><li>ordered_list는 번호로 라인을 표시해줍니다</li></h3>
+  <li>이러면 html을 메모장 정도로는 간단히 사용하겠죠?</li></ol>
+  <p>요것은 단락인 p 태그입니다.</p>
+  <p>br태그를 없애버린 주범입니다.(CSS로 간격조절이 용이하거든요)</p>
+  <div>구획을 나눌때쓰는 의미없는 block 식의 그룹형 태그입니다.</div>
+  1줄 전체를 차지합니다. > li태그 역시 block 식입니다.
+  <span>div와 마찬가지로 의미없는 inline 식의 그룹형 태그입니다</span>
+   > 정해진 부분까지만 차지합니다.
+  <a href="https://seonmyeongsong.github.io/HTML-CSS_StudyRoom/" target="_blank">링크는 a 태그입니다.</a>
+  <!--href에 이동하고자하는 주소를, target은 "_blank"는 새창으로열기 입력안할시 현재창으로 열기입니다.-->
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAA/FBMVEX////kTSbxZSnr6+sAAADkSiLnY0P86+bkTifiSSXzaSnuYCjxYB/pVyf5+fnW1tb/+PPyd0vwWBL1k3DzhGDr+fzo6OjlcVbjQBRTU1N2dnbIyMhubm6CgoLlbVbkRxzmfGbr9PPDw8MNDQ2SkpKrq6vjQAvwUgDjMAD1wrbjOgDjPA3s///52tPshnDuk36enp5hYWGxsbHlVDDwopDztaf70sPnYTz308z64dv3pYjyrJzlVS/naU5DQ0MkJCQ3ODguLi7scUz5wa/4sZrq3df2nHzpwbXul4fvRgDlc1zooJDq0Mv0glbpua771sbzcz3xZjT3rJH5vqck4WDSAAAI5ElEQVR4nO2da1faShSGQzUkXIoRBVNbG2iPAYOgFrkVOO2p2iK2trb//7+cmUxiZsdMJKySfNjzfOgCDCzm6SSTPe8kKIpEIpFIJBKJRCKRSCQSiUQioVRc4MNKCLDV459Dr+LkzTblHX34j/fw3TbkQqn86z44Ym/55L2qHLoPXmf59bPmMKzv9RN9b5TKq+3A1LH/qnIk9SXS95lstfVJ6gtIpG/7XFEuHl+V+sDx61yg7yLQ977yOpAq9fn6jj4cH3+48GzsHB4eHrEnn4/I4/NA3/bFK6mP5zDU1XwbO0wrexLo43dpqU+sj+2kh+yJ1Ccigb73/ibvpT6fBPr+Zbq2z/+T+nyS9L7KZ9fbDux9O9l9+ezxR17CxTP6tpUP5J9P9ZC+iyMGyl4Ycd7nEqmPVsgflJA+n+OsmpAlEVWHS7S++vtXitTHkUyfcrwj9fEk1EeR+gIi5vtcmL437Ik336fwf7oIj9rnGXz7zKnvUCqhh8SY+6TubeU+8c9QHv/E3uCzlf6Xl0gkEolEggNtc2TdtBQwvuQ3xGiRddtSwJhb6mawp1m3LQUqDSu3GexB1m1Lg7ON6Rtm3bQ0uNyUPqebddPSYLqx3odh5FVOEukrrIC/rZF109Igib7Cy1XQ3W3VEQp9YzWBvlJxBV4yfXMU+iZ6En0vnqfItrUaKFbrav3Vu99K+l6w/w/rLOuWpYKxKX2XWbcsHfJ/Wx/b1sRQsxEO/rK+EjtzsU6yblg6JCh6pb6nJCh6k+hTx1k3LB0uzY3o01GUvIoyCOmzYiiVY2D2ii9dfWofRclLqjYb6pvHzCB/2RXzy+t9vj4URQep2oA+S681t4QYMQyrQF8+63alhAZOXFS7KdZXj6vDrlpMX47pO0itAdmizXh/qlNfU9+11/u8XtxI6/tnjAbLjvbNmvq+Qn04Sl5S9MKyo/19TX37QJ+JpORVDFB26O1va+rbLQN9KHI2Sg/qu6+tp69Y5s+abSQ1m6IsgD7nbk19VU8f+xwbSc2mKFO+7NA7i/X0GS3+tC9nTdJrQLbAqs3sradPa3k1Gzv/mSGp2UjVBvRZb7mho1kDNGM+ZXIL9I3Q6BsCfWo+0Fe7WzYAe2L2y0AfjpyN0gVFr9oPOt9pr20CqmL8CRdWs1kNNPo0OOVSqAf67jo6GU1yLPzR9VXm+7xDQC/rVqVGBeozbwJ99w40u7o+DGsjPXRQtTlB1Vb7llwfO2/BkrNRRlBfUHY0v9vr6kNTs4WjSmcQnPjdmEn1eTWbiaZmCxe9zt1pcJ5cWFcfiqWlDFj0dnqBvi24X6+uz0aSs1Fg0Ws2An3NeVJ9XsmLY2kpA2Zt5jw49jWX9qpBZUgfitVpjDFYZ2CNOH1387c8+0L8yVIvZ9OzblOKdMEeaun8nAGkIkoplaE/X+V+hjrKuk0pMoFZmynM2mImrK49fd7CZiwxJUWD42tHmLXF6PsIczY8JS/RB8fXjjBri9G3B/UhKnkVY8nri8naYvT9gDElopI3tEJSb9+voW8XBkWIarbQCkndma6h7wWIKS00ORsFXhZoC7M2sT6jDHqfiqhmC1VtMVmbWJ/GDn2PORuamJICqzarkXzn7foxJSs68ORslCHUNz+tCRB+wk+ob45KXxfOyecORPBV7o9dztEV1LdEk7NRNKhPNUWAaPKWc3QFajY0ayMZoawtpwsA833lKvcJfsnr7f5Y1kZ66KtdmAX1FbkPCJW8WNZGesA5A3Bph1jfL+4D9rzpPnwxJQVmbeqIu7ZDFer7Ebzf2IdrIxHFlJRQ1jY4fZwgvSmI9FX3gvcbv5AuLWWEFpguuKyNv1oa6vsdvN/w/uDpw3ELl4DQAlO+assL9V0H79dA0pFzUJ01h1ZI6uaSC4sOTIG+FpeEa3BlLqacjTKEWducWyHZEOrj9tAu1JfLriWZMM4BfaNg362dOXq0vjI3qzKEC5sx5WyU7ozXp/aDFZK1O5G+EqfvD96cjTKB581qsEKyNmgL9D1w48NvWLNhytkoocsCzSBra35rO6blLc8N9JWrrX1uxuAr3pyNYoijyubNfc9qt81gbXO5ddvavf7Jn5z4MSWzjK1mU5QlGHodEFXWTms3g0bf6ZiFEul11d2Pw/B0nhdTekkHprWRjB7UNwilHaR62/q+yHduy3tXk4ip0F2Ys6HTB2/mYl9GhEVN0gl/Rp8PGw9AXw5VTEmBN3Mxz6KzNtFFWRobUopMnzpDVvI+uSxwGa1PlLR1/QuyvJwNVUxJCUWV+eioUqTvZxXoyyObMSBVGwiLrH6y3he6hQueywF94HVtqnXTrEXcz0WgT7sGp33WMuUvnz0GvI2aauUX37Zq4T4YpW/yZ+/Bs4e1ZiP6ZqGsTXXazvzuO1HYFOvThl8fWre+PKwxJcF4cgtOXVct2+yf3debjwZ5fUb3ev+h5V/Gy+tDcwuXAENwC06107ZpJzw9bfL6Jlek27WAOgq+ywF9eoJ7SLqd0FEbUzqYbFF92vjjbjXU7V7wRQe2nI2yiL0Fp9pxbDKY1BWNDBQR3Q7oc9DVbM/+cILu7sdOqdWqRqvjex+6ooNUbc/fAJbsx/GXBPp3wEFXdKz4wwnxV1T6NdsMXdFB6q5V1ljF6Ss+Xs+WR6ivu8oPJ4j0EXWll7o32aceINQ36a+rr0jV5YKVRAhrthV/d+KJviJ1l+N+YCeHMGdzGa2hj+6xhfBG+HI2ymiFoTfQ5x7tck/d0bkGhDUbOfE7sGzrmR7I9PnqnrpTVdMZ9RCeNRMM7aSX1824TlgosTE28o+qZfXnl2MD2eI0HmM8XZriTlgoibqdRbrd2QnOfgcxThZvZ4JOGHWwo91u1JiiCyfFGN1Bw3bM5w6FrjrbmZ2dIKxyn2N8uZzFDyaqaeZ7A7nHCqCDSZ/smlEK6ctkoJDdLp7KeNrQQ52QDBR2fiEHitWoaCdn85l/JFRNtd+YRi2zkgghg0kvRwYTm3S7oex261AZX/YG8mAnkUgkEolEIpFIJBKJRCKRrMr/zrUi2cGBICAAAAAASUVORK5CYII=" width=15px alt="HTML5사진" title="이미지연습용사진">이미지를 보여주는 img 태그입니다. </img>
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1f94Cv49a7s&autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>영상등은 iframe 태그를 사용합니다.</iframe>
+  <!--src는 주소, frameborder는 테두리여부 (html5부터 지원안한다고함) allow는 차례대로 1. 폰 가로세로 자동회전 2. 자동재생 3. 암호화영상 4. 폰 플로팅영상허가 allowfullscreen은 전체화면 허가-->
+  </div class="기본기">
+
+
 </body>
 </html>
