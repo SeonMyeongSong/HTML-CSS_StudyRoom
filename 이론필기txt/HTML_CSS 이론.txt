@@ -1,0 +1,80 @@
+HTML이란?
+: Hyper Text Markup Language로 웹 페이지 제작 위해 사용되는 마크업 언어.
+ 확장자로는 *.html로 지정. -> 웹 브라우저는 이를 인식하고 로딩. (에디터 구애 받지 않음)
+
+<div~> </div~> [divine의 약자] : 태그
+<~ class = "box"> </~> : 속성
+<div class = "box"> </div> : 엘레먼트
+<!-- ~~~ --> : 주석
+
+<html> </html> : html 파일임을 알려줌
+<head> </head> : 머리 부분
+<body> </body> : 본문 내용
+
+#head 부분
+<title> </title> : 웹 이름
+<a> </a>[anchor의 약자] : 다른 주소를 연다
+<link href = "~"> content </link> : 다른 곳에 저장된 문서를 현 html에 불러옴. 
+외부 데이터 연결에 주로 사용 (글자색 이미지 등) (정보가 부족하면 안됨)
+	- href : 파일 위치(주소)
+	- rel , type : 어떤 타입의 파일인지 말함.
+	- target = "_blank" : 새 탭 열기
+	- title = "~" : 주석
+<meta ~> : 자세한 설명
+	- name : 공유 시 이름
+	- content : 공유 시 내용
+<style> </style> : CSS기능. 색 변경
+	- ClassName { color : red ; }
+
+#body 부분
+<h1~6> </h1~6> : 글씨 제목처럼 크기 1~6
+<b> </b>  : 굵은 글씨
+<strong> </strong> : 강조 
+<i> </i> : 기울은 글씨
+<p> </p> : 문단
+<br> : 개행 (Enter Key)
+<img src = "Address" /> : 이미지 파일 불러오기
+<video src = "Address" controls/> : 비디오 파일 불러오기
+	- src : 주소
+	- controls : 재생 버튼
+<a href = "Address" target = "_blank">Content </a> : 링크 주소
+	- href : 주소
+	- target = "_blank" : 새 창 띄우기
+
+<table border = "1"> </table> :
+	- border : 테이블 경계선 굵기
+	- width : 너비 지정 (픽셀, %)
+	- height : 높이 지정 (픽셀, %)
+	- cellpadding : 셀과 경계선 사이 여백
+	- cellspacing : 셀과 셀 사이의 여백
+
+	<thead> </thead> : table head 영역
+		<tr>~</tr> : table row (가로줄)
+			<th>content</th> : table head (표 제목)
+	<tbody></tbody> : table body 영역
+		<tr>~</tr> : 한 줄
+			<td colspan="2" rowspan="3">content</td> : table data (셀)
+				- colspan : 행(가로) 셀 병합
+				- rowspan : 열(세로) 셀 병합
+
+<ol> ~ </ol> : 숫자 목록
+	<li>content</li> : 라인 1줄
+<ul> ~ </ul> : 점 목록 
+	<li>content</li> : 라인 1줄
+
+<div class = "className">content</div> : 구역 나눔 (1줄 전체 공간 차지)
+<span class = "className">content</span> : 구역 나눔 (자기 내용물 만큼 공간 차지)
+
+<input type = "text" /> : text Box
+<input type = "checkbox" /> : check Box (네모)
+<input type = "radio" /> : check Box (원)
+<input type = "color" /> : 색
+<textarea></textarea> : 여러문장 박스
+<select name = "name"> : 드랍다운 박스
+	<option value = "val_name">content</option>
+<form> </form> :
+	<input type = "email" placeholder = "hint" /> : email 만 받아들임
+	<input type = "password" placeholder = "hint" /> : 박스 내용이 안보임
+	<button type = "submit">content</button> : 제출
+	- placeholder : 힌트 내용
+

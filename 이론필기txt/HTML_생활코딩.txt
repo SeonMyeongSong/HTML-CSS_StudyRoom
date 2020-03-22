@@ -1,0 +1,222 @@
+Memo_Name = "생활코딩 html 태그"
+
+&html 태그 관련정보는 w3schools 이용
+
+<li> content </li>[list의 약자] : 라인 (동그라미 기호)
+
+<ul>
+	<li> ~ </li>
+</ul> [unordered list] : 그룹핑 (순서 없는 리스트)
+
+<ol>
+	~
+</ol> [ordered list] : 그룹핑 (순서 있는)
+
+html에서 크기 숫자는 내림차순, 구성은 절차진행
+
+<html> :웹 최상위 태그
+
+<head>	: 웹 윗부분 영역
+	<meta charset = "문자 형식"> : head에 쓸 것
+	<title> content </title> 웹 이름
+</head>
+
+<body> : 웹 큰 본문 영역
+	<h1> ~ </h1>
+</body>
+
+</html>
+
+<!DOCTYPE html> : html 버전 지정해주는 거 (현재 html5는 좌측 따름)
+
+# 태그 공부
+
+<h> </h> : 제목 태그 / 1~6까지 있음
+
+<p>ct </p> [paragraph] : 단락 생성, 부피가 있음. 기본 2줄 / css를 통해 디자인 변경 가능.
+
+<div> </div> [division] : 의미없음	[block]
+
+<span> </span> 	: 의미없음	[inline]
+
+<br> [a forced line-break] : 간격이 정해져있음 기본 1줄 / void element /
+
+<u> </u> : 언더라인
+
+<a href="~"> </a>
+	*href : 이동 주소 (sfsf.html 이나 www.~.com 등)
+	*target : 링크를 어떻게 열것인가
+		- _blank : 새창으로
+		- _self : 기본값
+
+<link>	: 외부 연결
+	*rel = "canonical" : href 주소로 가게해라 >> 서버 못다뤄서 리다이렉션 못할경우에 쓰시오.
+	# link 사용법
+
+	<link rel="stylesheet" href="style.css" > sytle.css 파일을 stylesheet로 적용	해라
+
+<img> [image] : html2 부터 시작 /
+	*src : img 이름
+	*width : 폭 px 단위
+	*height : 높이 px 단위 (높이 폭 중 하나만 지정시 비율 자동으로 맞춰줌)
+	*alt [alternative text : img 대체 이름 지정 (img 깨질 시)
+	*title : tooltip 기능
+
+<iframe> </iframe> : 동영상 삽입
+	*src : 주소
+	*frameborder : 테두리여부
+	*allowfullscreen : 전체 화면 허용여부
+
+<table> ct <table> : 표 (최상위)
+	*border : 테두리 / 두깨는 1~
+
+	<thead> ct </thead> [table head] : 절차 진행 순서보다 우선
+		<th> </th> : 굵은 글씨로 표현됨. / <thead>부분에서는 <td> 대신 씀
+	<tbody> ct </tbody> :
+	<tfoot> ct <tfoot> :
+
+	<tr> ct </tr> [table row] : 표 행 (그룹)
+	<td> ct </td> [table data] : 표 데이터 = 셀
+		*rowspan : 행 병합
+		*colspan [column span]: 열 병합
+.
+<form> </form> : 로그인 창등, 서버 관련
+	*action : 정보 전달 장소
+	*method : 기본값은 get
+		-post : urlx 주소창에 안들어남
+		-get : url
+	*autocomplete : 자동완성 기능 (하위영역 전체에 적용, 하위영역에 사용시 개별적 사용가능<덮어쓰기>)
+		-on/off
+
+	<input> : 입력창
+		*type : 입력 타입
+			-text
+			-password : ... 표시
+			-submit : "제출" 기본 표시, 정보 전송 기능
+			-radio : 원형 단일 선택창, 같은 이름으로 묶어야 댐
+			-checkbox : 사각형 다중 선택창, 같은 이름으로
+			-button : 버튼 기능
+			-reset : value값 기본으로
+			-hidden : 화면에 표시되지 않지만 존재
+			-file : 파일 선택
+			-number : 숫자만 입력
+			-color : 색 쉽게
+			-date : 날짜 쉽게
+			-email : 이메일만 (모바일에서 키패드에 @생성)
+			-month : 년,월 쉽게 (일 빠짐)
+			-range : 범위 쉽게 슬라이더로
+			-search : 검색기능 의미론적
+			-time : 시간 쉽게 (년도 시간)
+			-url : url만
+			-week : 주 쉽게 (년도 번째)
+			-tel : 모바일에서 숫자 키패드 띄움
+		*name : 구별위한 이름, 변수라 생각함.
+		*value : input에 기본값
+		*checked : 선택된 상태
+		*onclick : javascript랑 연동하는 거
+		*id : for 속성값에 사용에 필요
+		*min, max : 최대, 최솟값
+		*placeholder : hint 역할
+		*autofocus : 마우스 커서 위치
+		*required : 필수입력
+		*pattern : 문자 입력 조건 설정(정규표현식으로 써야함)
+
+	<textarea> </textarea> : 여러줄 쓰기
+		-cols : 열 , 폭 (글자 가로)
+		-rows : 행 , 높이(줄 세로)
+
+	<select> </select> : <option> 상위, 드랍다운 리스트
+		*name : 선택창 변수
+		*multiple : 다중선택(ctr 누른 후 선택) , 속성값 없음
+		<option> </option> : 선택지, 줄바꿈 댐
+			*value : option 변수
+
+	<label> </label> : 라벨
+		 *for : 연결 원하는 엘리먼트의 id랑 연결 (label외부 영역 연결가능)
+
+@포스트 방식 : 주소창 정보전달을 감춰야  할 때 url이 아닌 다른 방식 전송
+@get 방식 : 주소창 전달
+
+@업로드 : <form> action에 서버url method 는 post 방식, enctype="multipart/form-data"
+ >>> 서버 모르면 이해 불가
+
+<font> </font> : 퇴출된 태그 (용량만 너무 많이 사용해 정보 효율이 안좋음. CSS가 대체함)
+	*size : 크기 3이 기본값 1~7
+	*color : 색 변경
+
+@html은 정보성에 취중 . 즉, 정보가 제일 중요
+
+<meta> : 부가적인 정보 설명을 위한 것
+ 	*charset : 디코딩
+	*name :
+	*content : 기계가 웹 분류하는 기준이 대게 해줌
+	*http-equiv :
+		-refresh : 새로고침 , content="30" (30초마다 새로고침)
+
+# semantic : 의미론적인 태그들
+
+<header> </header> : 머리
+
+<footer> </footer> : 발
+
+<nav> </nav> [navigation] : 네비게이션. 탐색할 때 탐색해야하는 부분이다라는 의미론적 태그
+
+<article> </article> : 본문이란 의미론적 태그
+
+<section> </section> : 구획 의미론적 태그
+
+# 검색엔진최적화
+
+1. title 태그를 이용해 페이지 제목 무조건 나타낼 것!
+	-페이지 마다 고유 title
+	-정확환 정보 제목
+2. meta 태그도 무조건 사용!
+	-meta태그는 밖에 보이는 부분
+	-짧고 흥미를 끌 수 있게
+3. 이해하기 쉬운 url 주소
+	-보기 편한 url 일 수록 탐색하기 좋음
+	-숫자나열보다는 내용을 보여주는 걸로
+	-깊이 중첩 디렉토리 사용 X
+	-다른 주소 중복 컨텐츠 X
+4. 사이트내 이동이 쉽게
+	-경로표시
+	-url 일부 손실 접근 시에도 대처가능하게
+5. 링크는 text로! (하이퍼텍스트)
+	-박스 등으로 디자인 우선 X
+	-링크는 링크답게
+6. 앵커텍스트를 잘 만들자!
+7. src, alt 속성을 잘 작성하자
+	-의미를 가지도록
+8. image를 위한 디렉토리를 만들자
+9. 제목태그(h1)을 사용하자
+	-제목태그는 검색엔진과 관련있다
+10. 로봇을 생각하자
+	-robots.txt 에서 로봇을 허용할 지 안할지 설정한다. (보안도구로 사용 X)
+	ex) User-agent : * 	: 모든 로봇
+	     Disallow : / 	: 모든 웹 사이트 접근 금지
+	     Disallow : /search : 검색 금지
+11. sitemap 을 생각하자
+	-기계가 이해하기 쉽다.
+
+# 페이지랭크 : 구글이 페이지마다 랭크를 매긴 알고리즘
+	-많은 사이트가 링크한 사이트일 수록 랭크가 높다
+	-랭크 높은 사이트가 링크할수록 랭크가 더 높아진다.
+	ex) 낚시 링크를 남기는 이유
+
+# 모바일 최적화
+
+<meta name="viewport" content="width=device-width, initial-scal = "1.0">
+:<화면> 을 <넓이는 디바이스 넓이로> <처음 줌 값을 1.0으로 삼는다>
+
+# 무료 웹서버 이용
+	프론트엔드 부분만 무료로 사용가능한 것들이 많음
+ex) github
+
+# 댓글창 추가하는 법
+	DISQUS, LIVERE 등을 이용. 단, 웹서버 있어야함.
+
+# 채팅 추가하는 법
+	tawk.to 이용. 단, 웹서버 있어야함.
+
+# 웹 분석기
+	analytics.google.com 이용
